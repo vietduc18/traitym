@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 50vh;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  position: relative;
+  animation: beat alternate 1s infinite;
+}
+
+@keyframes beat {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.box1,
+.box2,
+.box3 {
+  position: absolute;
+}
+
+.box1 {
+  top: 160px;
+  left: -93px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: red;
+}
+
+.box2 {
+  top: 161px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: red;
+}
+
+.box3 {
+  width: 150px;
+  height: 150px;
+  top: 206px;
+  left: -46px;
+  background-color: red;
+  transform: rotate(45deg);
+}
